@@ -1,0 +1,41 @@
+
+main img {
+    width: 250px;
+}
+
+.imgDiv {
+margin: auto;
+display: flex;
+justify-content: center;
+align-content: center;
+margin-bottom: 40px;
+}
+
+main h2,
+h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+@media (max-width: 700px) {
+    main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 150px;
+    }
+
+    .imgDiv {
+        width: 100%;
+    }
+
+    main h2 {
+        border: none;
+        width: 250px;
+        display: flex;
+       margin: auto;
+    }
+}
