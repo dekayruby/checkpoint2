@@ -1,0 +1,92 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr .5fr .5fr;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* border: solid black; */
+    width: 300px;
+    height: 200px;
+    margin-left: 70px;
+    border-radius: 50%;
+    background-image: url(images/watercolor.jpg);
+    background-position: center;
+}
+
+.contactDiv h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.eduDiv {
+    padding: 20px;
+    border-top: 3px #7b113a solid;
+}
+
+.skillsDiv {
+    padding: 20px;
+}
+
+.skillsDiv ul {
+    list-style-type: none;
+}
+
+.employmentDiv {
+    padding: 20px;
+    border-top: 3px #7b113a solid;;
+}
+
+.employmentDiv ul {
+    list-style-type: none;
+}
+
+.strengthsDiv {
+    border-top: 3px #7b113a solid;
+    grid-column: 1 / span 2;
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 150px;
+    }
+
+    .contactDiv {
+        margin: auto;
+    }
+    .wholeNav {
+        width: 100%;
+        height: 150px;
+      }
+      .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .navList {
+        padding: 20px 10px 0px 10px;
+        font-size: 12px;
+      }
+      
+      .myheader {
+        font-size: 20px;
+      }
+      .socialLinks {
+        display: none;
+    }
+}

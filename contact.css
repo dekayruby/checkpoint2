@@ -1,0 +1,86 @@
+main {
+    /* border: solid black; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inputDiv {
+   
+    /* border: solid black; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+#name,
+#email {
+    height: 25px;
+    width: 200px;
+}
+
+#comments {
+    height: 100px;
+    width: 300px;
+}
+
+.btn {
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+} 
+.btn:hover {
+    cursor: pointer;
+}
+
+.contact-wrapper {
+height: 80%;
+width: 80%;
+display: flex;
+}
+
+.contact-para {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px;
+        margin-top: 120px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .inputDiv {
+        padding: 0px;
+    }
+
+    #comments {
+        width: 200px;
+    }
+
+    .contact-para {
+        margin-top: 20px;
+    }
+}
